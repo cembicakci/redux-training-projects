@@ -1,1 +1,1 @@
-## This repo includes basic redux-learning projects from @patika.dev
+This repo includes basic redux-learning projects from @patika.dev
