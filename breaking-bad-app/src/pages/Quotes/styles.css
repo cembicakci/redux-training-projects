@@ -6,3 +6,12 @@
     text-align: center;
     padding: 30px;
 }
+
+.quote_item a{
+    text-decoration: none;
+    color: #333;
+}
+
+.quote_item a:hover{
+    text-decoration: underline;
+}
