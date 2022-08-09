@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { updateContact } from '../../redux/contactSlice'
+import { useNavigate } from 'react-router-dom'
 
 function EditForm({ contact }) {
 
@@ -8,6 +9,7 @@ function EditForm({ contact }) {
     const [number, setNumber] = useState(contact.phone_number)
 
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
 
     const handleSubmit = (e) => {
@@ -19,9 +21,11 @@ function EditForm({ contact }) {
             id: contact.id,
             changes:{
                 name,
-                number
+                phone_number: number
             }
         }))
+
+        navigate('/')
     }   
 
 
