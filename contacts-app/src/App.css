@@ -45,7 +45,33 @@ li {
   padding: 5px 0;
 }
 
-.btn>button {
+.btn > button {
   padding: 5px;
   width: 60px;
+}
+
+.deleteBtn{
+  padding: 5px;
+  width: 18px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.deleteBtnAll{
+  text-align: right;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.deleteBtnAll:hover{
+  text-decoration: underline;
+}
+
+.edit span{
+  margin-left: 10px;
+  font-size: 12px;
+  cursor: pointer;
 }
